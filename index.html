@@ -684,26 +684,170 @@
   .hero-ctas { animation: fadeUp 0.6s ease both; animation-delay: 0.5s; }
 
   /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
-    nav { padding: 16px 24px; }
-    .nav-links { gap: 20px; }
 
-    #hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-left { padding: 120px 24px 60px; }
-    .hero-right { min-height: 340px; }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    nav { padding: 18px 32px; }
+    .hero-left { padding: 80px 32px 80px 32px; }
+    section { padding: 80px 32px; }
+    #cases { padding: 80px 32px; }
+    #contato { padding: 80px 32px; }
+    footer { padding: 24px 32px; }
+  }
 
-    section { padding: 72px 24px; }
-    #cases { padding: 72px 24px; }
-    #contato { padding: 72px 24px; }
-    footer { padding: 24px; flex-direction: column; gap: 8px; text-align: center; }
+  /* Mobile */
+  @media (max-width: 768px) {
 
-    .sobre-grid { grid-template-columns: 1fr; gap: 48px; }
-    .cases-grid { grid-template-columns: 1fr; }
-    .case-card-wide { grid-column: span 1; aspect-ratio: 4/3; }
-    .skills-grid { grid-template-columns: 1fr; }
+    /* NAV — hamburger oculto, links comprimidos */
+    nav {
+      padding: 14px 20px;
+      gap: 12px;
+    }
+    .nav-logo { font-size: 18px; letter-spacing: 2px; }
+    .nav-links { gap: 14px; }
+    .nav-links a { font-size: 11px; letter-spacing: 1px; }
+
+    /* HERO — coluna única, painel vermelho vira faixa horizontal compacta */
+    #hero {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      min-height: auto;
+      padding-top: 64px;
+    }
+
+    .hero-left {
+      padding: 40px 20px 36px;
+      order: 1;
+    }
+
+    .hero-tag {
+      font-size: 10px;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+    }
+
+    .hero-name {
+      font-size: clamp(56px, 16vw, 80px);
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-size: 11px;
+      letter-spacing: 1.2px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .hero-desc {
+      font-size: 14px;
+      margin-bottom: 28px;
+      max-width: 100%;
+    }
+
+    .hero-ctas {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+      text-align: center;
+      padding: 13px 20px;
+      font-size: 11px;
+      width: 100%;
+    }
+
+    /* Painel vermelho — faixa horizontal compacta no mobile */
+    .hero-right {
+      order: 2;
+      min-height: auto;
+      padding: 28px 20px;
+    }
+
+    .hero-right::before { display: none; }
+
+    .hero-right-content {
+      position: static;
+      padding: 0;
+    }
+
+    .hero-disciplines { gap: 8px; }
+
+    .discipline-item {
+      padding: 12px 16px;
+      gap: 12px;
+    }
+
+    .discipline-num { font-size: 22px; min-width: 26px; }
+    .discipline-text { font-size: 12px; letter-spacing: 1px; }
+    .discipline-sub { font-size: 10px; }
+
+    /* SECTIONS */
+    section { padding: 56px 20px; }
+    #cases { padding: 56px 20px; }
+    #contato { padding: 56px 20px; max-width: 100%; }
+
+    .section-label { font-size: 10px; }
+    .section-title { font-size: clamp(36px, 10vw, 52px); margin-bottom: 32px; }
+
+    /* SOBRE */
+    .sobre-grid { grid-template-columns: 1fr; gap: 36px; }
+    .sobre-text p { font-size: 14px; }
+    .sobre-stats { grid-template-columns: 1fr 1fr; gap: 2px; }
+    .stat-block { padding: 24px 18px; }
+    .stat-num { font-size: 42px; }
+    .stat-label { font-size: 11px; }
+
+    /* CASES */
+    .cases-header { margin-bottom: 32px; }
+    .cases-grid {
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+    .case-card-wide {
+      grid-column: span 1;
+      aspect-ratio: 16/9;
+    }
+    .case-card { aspect-ratio: 16/9; }
+    .case-title { font-size: 20px; }
+    .case-card-wide .case-title { font-size: 22px; }
+    .case-desc { font-size: 11px; }
+    .case-overlay { padding: 16px; }
+    .case-wip-badge { font-size: 9px; padding: 4px 8px; }
+
+    /* HABILIDADES */
+    .skills-grid { grid-template-columns: 1fr; gap: 2px; }
+    .skill-block { padding: 24px 20px; }
     .skill-block.soft { grid-column: span 1; }
-    .contato-inner { grid-template-columns: 1fr; gap: 48px; }
-    .acervo-box { padding: 40px 24px; }
+    .skill-tag { font-size: 11px; padding: 4px 10px; }
+
+    /* ACERVO */
+    .acervo-box { padding: 36px 20px; }
+    .acervo-box p { font-size: 14px; }
+
+    /* CONTATO */
+    .contato-inner {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+    .contato-item { padding: 16px 18px; gap: 14px; }
+    .contato-icon { width: 36px; height: 36px; }
+    .contato-info-value { font-size: 13px; }
+
+    /* FOOTER */
+    footer {
+      padding: 20px;
+      flex-direction: column;
+      gap: 6px;
+      text-align: center;
+    }
+    footer span { font-size: 11px; }
+  }
+
+  /* Telas muito pequenas */
+  @media (max-width: 380px) {
+    .hero-name { font-size: 52px; }
+    .nav-links a { font-size: 10px; }
+    .nav-links { gap: 10px; }
   }
 </style>
 </head>
