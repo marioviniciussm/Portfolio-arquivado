@@ -215,17 +215,21 @@
     overflow: hidden;
   }
 
-  .hero-right::before {
-    content: 'MV';
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 320px;
-    color: rgba(0,0,0,0.15);
+  .hero-photo {
     position: absolute;
-    bottom: -40px;
-    right: -20px;
-    line-height: 1;
-    pointer-events: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 85%;
+    width: auto;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
   }
+
+  .hero-right::before { display: none; }
 
   .hero-right-content {
     position: absolute;
@@ -772,8 +776,12 @@
     /* Painel vermelho — faixa horizontal compacta no mobile */
     .hero-right {
       order: 2;
-      min-height: auto;
-      padding: 28px 20px;
+      min-height: 280px;
+      padding: 0 20px 28px;
+    }
+
+    .hero-photo {
+      height: 75%;
     }
 
     .hero-right::before { display: none; }
@@ -900,6 +908,7 @@
   </div>
 
   <div class="hero-right">
+    <img src="foto-hero-mariov.png" alt="Mário Vinicius" class="hero-photo">
     <div class="hero-right-content">
       <div class="hero-disciplines">
         <div class="discipline-item">
