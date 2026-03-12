@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mário Vinicius — Comunicador Visual</title>
+<meta name="description" content="Portfólio de Mário Vinicius — Comunicador Visual especializado em design, videomaker e social media estratégico. Porto Alegre/RS.">
+<meta property="og:title" content="Mário Vinicius — Comunicador Visual">
+<meta property="og:description" content="Design, Videomaker e Social Media Estratégico. Transformo briefings em narrativas visuais de alto impacto.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marioviniciussm.github.io/Portfolio">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mário Vinicius — Comunicador Visual">
+<meta name="twitter:description" content="Design, Videomaker e Social Media Estratégico. Porto Alegre/RS.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -467,12 +475,19 @@
     transform: translateY(0);
   }
 
-  .case-arrow svg {
-    width: 14px;
-    height: 14px;
-    stroke: white;
-    fill: none;
-    stroke-width: 2;
+  .case-wip .placeholder-icon { color: rgba(192,57,43,0.15); }
+  .case-wip-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(15,15,15,0.85);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--gray);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 10px;
   }
 
   /* ── HABILIDADES ── */
@@ -722,6 +737,7 @@
     <div class="hero-ctas">
       <a href="#cases" class="btn-primary">Ver Cases</a>
       <a href="curriculo-mario-vinicius.pdf" class="btn-secondary" target="_blank">Currículo</a>
+      <a href="https://www.linkedin.com/in/mario-vinicius/" class="btn-secondary" target="_blank">LinkedIn</a>
     </div>
   </div>
 
@@ -801,10 +817,11 @@
   <div class="cases-grid">
 
     <!-- CASE 1 — wide -->
-    <a href="LINK_CASE_1_AQUI" class="case-card case-card-wide" target="_blank">
+    <a href="LINK_CASE_1_AQUI" class="case-card case-card-wide case-wip" target="_blank">
       <div class="case-thumb-placeholder">
         <span class="placeholder-icon">CASE 01</span>
       </div>
+      <div class="case-wip-badge">Em breve</div>
       <div class="case-overlay">
         <span class="case-tag">Design Editorial</span>
         <h3 class="case-title">Relatório de Atividades 2024</h3>
@@ -816,10 +833,11 @@
     </a>
 
     <!-- CASE 2 -->
-    <a href="LINK_CASE_2_AQUI" class="case-card" target="_blank">
+    <a href="LINK_CASE_2_AQUI" class="case-card case-wip" target="_blank">
       <div class="case-thumb-placeholder">
         <span class="placeholder-icon">CASE 02</span>
       </div>
+      <div class="case-wip-badge">Em breve</div>
       <div class="case-overlay">
         <span class="case-tag">Vídeo Institucional</span>
         <h3 class="case-title">[ Título do vídeo ]</h3>
@@ -831,10 +849,11 @@
     </a>
 
     <!-- CASE 3 -->
-    <a href="LINK_CASE_3_AQUI" class="case-card" target="_blank">
+    <a href="LINK_CASE_3_AQUI" class="case-card case-wip" target="_blank">
       <div class="case-thumb-placeholder">
         <span class="placeholder-icon">CASE 03</span>
       </div>
+      <div class="case-wip-badge">Em breve</div>
       <div class="case-overlay">
         <span class="case-tag">[ Categoria ]</span>
         <h3 class="case-title">[ Título do case ]</h3>
@@ -846,10 +865,11 @@
     </a>
 
     <!-- CASE 4 -->
-    <a href="LINK_CASE_4_AQUI" class="case-card" target="_blank">
+    <a href="LINK_CASE_4_AQUI" class="case-card case-wip" target="_blank">
       <div class="case-thumb-placeholder">
         <span class="placeholder-icon">CASE 04</span>
       </div>
+      <div class="case-wip-badge">Em breve</div>
       <div class="case-overlay">
         <span class="case-tag">Fotografia Editorial</span>
         <h3 class="case-title">[ Título do ensaio ]</h3>
@@ -861,10 +881,11 @@
     </a>
 
     <!-- CASE 5 — wide -->
-    <a href="LINK_CASE_5_AQUI" class="case-card case-card-wide" target="_blank">
+    <a href="LINK_CASE_5_AQUI" class="case-card case-card-wide case-wip" target="_blank">
       <div class="case-thumb-placeholder">
         <span class="placeholder-icon">CASE 05</span>
       </div>
+      <div class="case-wip-badge">Em breve</div>
       <div class="case-overlay">
         <span class="case-tag">Social Media e Design</span>
         <h3 class="case-title">Campanhas de Social Media</h3>
@@ -954,7 +975,7 @@
     <p>
       Os cases acima são uma seleção de trabalhos de autoria própria. Para quem quiser se aprofundar, o acervo completo — vídeos, fotos editoriais, peças de design e materiais gráficos — está organizado no Drive.
     </p>
-    <a href="LINK_DRIVE_AQUI" class="btn-primary" target="_blank">Acessar Drive</a>
+    <a href="https://drive.google.com/drive/folders/1wm5q7MAVVQt5A0FJ-CaUJa_mYqi8h7FD?usp=sharing" class="btn-primary" target="_blank">Acessar Drive</a>
   </div>
 </section>
 
@@ -968,13 +989,13 @@
     </div>
     <div class="contato-links">
 
-      <a href="mailto:marioviniciussm@gmail.com" class="contato-item">
+      <a href="/cdn-cgi/l/email-protection#422f23302b2d342b2c2b212b3731312f02252f232b2e6c212d2f" class="contato-item">
         <div class="contato-icon">
           <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
         </div>
         <div>
           <div class="contato-info-label">E-mail</div>
-          <div class="contato-info-value">marioviniciussm@gmail.com</div>
+          <div class="contato-info-value"><span class="__cf_email__" data-cfemail="ef828e9d8680998681868c869a9c9c82af88828e8683c18c8082">[email&#160;protected]</span></div>
         </div>
       </a>
 
@@ -988,13 +1009,13 @@
         </div>
       </a>
 
-      <a href="LINK_LINKEDIN_AQUI" class="contato-item" target="_blank">
+      <a href="https://www.linkedin.com/in/mario-vinicius/" class="contato-item" target="_blank">
         <div class="contato-icon">
           <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </div>
         <div>
           <div class="contato-info-label">LinkedIn</div>
-          <div class="contato-info-value">linkedin.com/in/mário-vinicius</div>
+          <div class="contato-info-value">linkedin.com/in/mario-vinicius</div>
         </div>
       </a>
 
@@ -1004,9 +1025,4 @@
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2026 <strong>Mário Vinicius Silva Mineiro</strong></span>
-  <span>Comunicador Visual · Porto Alegre, RS</span>
-</footer>
-
-</body>
-</html>
+  <s
