@@ -776,12 +776,21 @@
     /* Painel vermelho — faixa horizontal compacta no mobile */
     .hero-right {
       order: 2;
-      min-height: 280px;
-      padding: 0 20px 28px;
+      min-height: 260px;
+      padding: 20px 20px 24px;
     }
 
     .hero-photo {
-      height: 75%;
+      height: 100%;
+      width: 55%;
+      left: auto;
+      right: 0;
+      transform: none;
+      object-position: top center;
+      mask-image: linear-gradient(to bottom, black 40%, transparent 90%), linear-gradient(to left, black 60%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 90%), linear-gradient(to left, black 60%, transparent 100%);
+      mask-composite: intersect;
+      -webkit-mask-composite: source-in;
     }
 
     .hero-right::before { display: none; }
